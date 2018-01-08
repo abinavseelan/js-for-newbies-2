@@ -1,4 +1,4 @@
-# Javascript For Newbies - Session 2
+# Javascript For Newbies - Session 2 ✌️
 
 This is a companion repository for Session 2 of the *JS for Newbies* series by Javascript Meetup Bangalore. [Event Link](https://www.meetup.com/JavaScript-Meetup-Bangalore/events/246187384/)
 
