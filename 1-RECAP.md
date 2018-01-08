@@ -16,7 +16,7 @@ Javascript can be natively run inside your browser like Chrome, Firefox or Safar
 
 ## Comments
 
-As a developer, the will sometimes come a need to document what you're code does *within* the code itself. This is where comments come in.
+As a developer, there will sometimes be a need to document what your code does *within* the code itself. This is where comments come in.
 
 Comments can be **single lined comments**. For example, here I want to explain what I'm doing with the `console.log()` statements. Single line comments can be created by adding a `//` to your code.
 
