@@ -65,8 +65,76 @@ Here we know that the value of `x + 10` is going to be 15 since the *variable* `
 
 Well...if you remember your 5th standard algebra well, then you've pretty much understood variables already! Similar to the way `x` holds 5 in the equation above, variables in programming languages can store some data that we can reference by just the variable name.
 
+Varibles in JS can be created using the `let` keyword.
+
 ```javascript
 let a = 10;
 
 console.log(a); // This will print the value 10 to the console
+```
+
+Variables can be reassigned to other values.
+
+```javascript
+let a = 10;
+
+console.log(a); // This will print the value 10 to the console
+
+a = 20; // Re-assigning the variable
+
+console.log(a); // This will print the value 20 to the console
+```
+
+## Constants
+
+Constants function like variables. The only caveat is that once a value has been assigned to a constant, the value cannot be changed. Constants in JS can be created using the `const` keyword.
+
+```javascript
+const number = 10;
+
+
+number = 20; // This line will throw an error!
+```
+
+<img width="434" alt="screen shot 2018-01-09 at 11 16 09 am" src="https://user-images.githubusercontent.com/6417910/34706559-9158c5fc-f52e-11e7-9a0e-ef162c485505.png">
+
+## Operators
+
+Programming revolves around solving problems, and problems, in most cases, involve taking data and computing results with them. JS, like most programming languages, lets you compute results using operators.
+
+Operators are of different kinds:
+
+- Numeric operators
+- Comparison
+- Logical
+
+### Numeric Operators
+
+Numeric operators function like their mathematical counterparts. JS supports the following numeric operators
+
+- `+` - Addition
+- `-` - Subtraction
+- `*` - Multiplication
+- `/` - Division
+- `%` - Modulus
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b); // This will print 15 to the console
+console.log(a - b); // This will print 5 to the console
+console.log(a * b); // This will print 50 to the console
+console.log(a / b); // This will print 2 to the console
+```
+
+The modulus operator, `%`, is something that you might not have seen before. In brief, the modules operator performs a division operations but the result of the operation is the remainder, not the quotient.
+
+```javascript
+let a = 10;
+let b = 5;
+let c = 3;
+
+console.log(a % b); // This will print 0 to the console since 10/5 has 0 remainder.
+console.log(a % c); // This will print 1 to the console since 10/3 has a 1 remainder.
 ```
