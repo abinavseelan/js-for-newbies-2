@@ -294,4 +294,72 @@ Each `case` block has a `break` statement in them. A `switch` block is evaluated
 
 Still confused? Try executing the above code without the `break` statements. 🙂
 
+## Loops
 
+Let's say I want to print the numbers 1 to 5. I could do it manually by
+
+```javascript
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+```
+
+But this easily gets tedious once I want to print more numbers, till 100 for example. This is where loops come in.
+
+### while()
+
+The `while()` loop allows us to specify a way to repeat the execution of some code until a certain condition is met. The condition is specified inside the `while()` brackets.
+
+Taking the same example as before,
+
+```javascript
+let number = 1;
+
+while(number !== 5) {
+    console.log(number);
+    number = number + 1;
+}
+```
+
+Here, we first send in `number = 1`, which is not equal to 5, so the block executes. We then increment number by 1 and retry the condition. *2* is still not equal to *5* so the block is executed again. This goes on until number is now 5. *5* is equal to *5*. Now the block stops repeating the execution continues after this block.
+
+
+### for()
+
+`for()` allows you to define the starting point, the end constraint and the increment for the loop in a single statement.
+
+```javascript
+for(let number = 1; number < 5; number = number + 1) {
+    console.log(number);
+}
+```
+
+The `for()` loop functions the same way the `while()` loop does, except that the all the looping data is specified in a single statement, thereby leaving the code inside the block pretty much independent of looping data.
+
+### do-while()
+
+This is a looping construct that is used less often when compared to the looping constructs mentioned above. To explain the difference between `while()` and `do-while()`, let us take an example.
+
+```javascript
+let number = 10;
+
+while(number < 10) {
+    // do something
+}
+```
+
+In the above snippet the code inside the `while()` loop will never execute since the condition `number < 10` is false.
+
+However, with a `do-while()` loop,
+
+```javascript
+let number = 10;
+
+do {
+    // do something
+} while(number < 10);
+```
+
+Here the code inside the `do {}` block will execute **at least** once, since the evaluation of the constraint happens at the bottom. It's a funny construct but it does have its uses. 😎
