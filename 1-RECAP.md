@@ -100,7 +100,7 @@ number = 20; // This line will throw an error!
 
 ## Operators
 
-Programming revolves around solving problems, and problems, in most cases, involve taking data and computing results with them. JS, like most programming languages, lets you compute results using operators.
+Programming revolves around solving problems and problems, in most cases, involve taking data and computing results with them. JS, like most other programming languages, lets you compute results using operators.
 
 Operators are of different kinds:
 
@@ -128,7 +128,7 @@ console.log(a * b); // This will print 50 to the console
 console.log(a / b); // This will print 2 to the console
 ```
 
-The modulus operator, `%`, is something that you might not have seen before. In brief, the modules operator performs a division operations but the result of the operation is the remainder, not the quotient.
+The modulus operator, `%`, is something that you might not have seen before. In brief, the modulus operator performs a division operation but the result of the operation is the remainder, not the quotient.
 
 ```javascript
 let a = 10;
