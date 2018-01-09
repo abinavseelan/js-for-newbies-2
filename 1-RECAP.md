@@ -2,6 +2,8 @@
 
 Session 1 of *JS for Newbies* was taken by [Ashish Singh](https://github.com/ashish1729) on 7th January, 2018. The entire webinar has been recorded and can be [found here](https://www.youtube.com/watch?v=aljqhsGXgkk)! The talk has a companion repository as well, which can be found [here](https://github.com/ashish1729/jsForNewbies-talk-1). I strongly urge you to go through the content there as well if you haven't already. 😄
 
+I'll be doing a quick recap of the topics since some of the topics covered in that Session are extremely important to the second Session.
+
 ## What is Javascript?
 
 Javascript is a programming language built for the web. It was initially designed for providing interactivity to static HTML-CSS websites. But over the course of its existence, Javascript has matured into a versatile programming language that has use-cases far beyond the interactivity that it was first designed for!
@@ -211,4 +213,85 @@ console.log(false || true); // This will print true to the console
 console.log(true || false); // This will print true to the console
 console.log(false || false); // This will print false to the console
 ```
+
+## Conditional Flow
+
+Programming is all about decisions and decisions are made possible using conditional flow statements.
+
+### if-else block
+
+The `if-else` block gives our code two branches to continue execution with. The decision on which branch to choose is made based on the condition provided in the `if (<condition>)`.
+
+```javascript
+let animal = 'cat';
+
+if (animal === 'cat') {
+    console.log("It's a 🐈");
+} else {
+    console.log("It's a 🐕");
+}
+
+// What's the output going to be?
+```
+
+Here, since `animal === 'cat'` is true, the output is `'It's a 🐈!'`. However, if `animal` was anything other than `cat`, then the code that executes will be from the `else` block.
+
+### if-(else if)-else
+
+While `if-else` gives us a decision tree of two paths the code can take, what if we want to have multiple choices. Lets say that if the variable `animal` is a cat, then we print `Meow!` to the console, if it's a dog, we print `Woof!` to the console, if it's a fish, we print `Blub!` to the console and it's neither of these, we print `Not an animal!` to the console.
+
+It's in cases like these that `if-(else if)-else` blocks come in handy!
+
+```javascript
+let animal = 'cat';
+
+if (animal === 'cat') {
+    console.log('Meow!');
+} else if (animal === 'dog') {
+    console.log('Woof!');
+} else if (animal === 'fish') {
+    console.log('Blub!');
+} else {
+    console.log('Not an animal!');
+}
+```
+
+### Switch statements
+
+While the above `if-(else-if)-else` block does the job, it isn't the prettiest thing to look at sometimes, especially if the number of *cases* increases. Javascript provides another conditional flow construct called `switch` which makes reading conditional flow a little bit better.
+
+```javascript
+let animal = 'cat';
+
+switch(animal) {
+    case 'cat': {
+        console.log('Meow!');
+        break;
+    }
+
+    case 'dog': {
+        console.log('Woof!');
+        break;
+    }
+
+    case 'fish': {
+        console.log('Blub!');
+        break;
+    }
+
+    default: {
+        console.log('Not an animal!');
+        break;
+    }
+}
+```
+
+There are a few things to point out here.
+
+The variable passed into `switch()` is the variable being evaluated. Each `case` compares the values in the `case` to the variable provided. For example, `case 'cat'` will check if `animal` is equal to `'cat'`.
+
+Each `case` block has a `break` statement in them. A `switch` block is evaluated top to bottom. Any time a `case` evalauates to `true`, the execution continues from there. A `break` statement is required to stop the execution and to *break* out of the switch block. Not adding a `break` at the end of a `case` will continue the execution to the next `case` as well.
+
+Still confused? Try executing the above code without the `break` statements. 🙂
+
 
