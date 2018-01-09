@@ -138,3 +138,51 @@ let c = 3;
 console.log(a % b); // This will print 0 to the console since 10/5 has 0 remainder.
 console.log(a % c); // This will print 1 to the console since 10/3 has a 1 remainder.
 ```
+
+### Comparison Operators
+
+Sometimes you would want to compare data, and this is where comparison operators come in
+
+The following are the supported comparison operators:
+
+- `>` - Greater than
+- `<` - Less than
+- `>=` - Greater than or equal to
+- `<=` - Less than or equal to
+- `==` - Equal to
+- `!=` - Not equal to
+- `===` - Strictly equal to
+- `!==` - Strictly not equal to
+
+```javascript
+console.log(10 > 5); // This will print true
+console.log(5 > 10); // This will print false
+
+console.log(10 < 5); // This will print false
+console.log(5 < 10); // This will print true
+
+console.log(10 >= 5); // This will print true
+console.log(5 >= 10); // This will print false
+console.log(10 >= 10); // This will print true
+
+console.log(10 <= 5); // This will print false
+console.log(5 <= 10); // This will print true
+console.log(5 <= 5); // This will print true
+
+console.log(10 == 10); // This will print true
+console.log(5 == 10); // This will print false
+
+console.log(10 != 10); // This will print false
+console.log(5 != 10); // This will print true
+```
+
+What is the difference between equal-to and strictly-equal-to? 🤔
+
+The `==` operator checks only the value being equated, while `===` checks both the value and the data types on either side of the operator (more on data types in Session 2).
+
+```javascript
+console.log(5 == '5'); // This will print true
+console.log(5 === '5'); // This will print false since the LHS is a number and the RHS is a string
+```
+
+Comparison operators are extremely useful while working with control flows like loops and conditional statments.
