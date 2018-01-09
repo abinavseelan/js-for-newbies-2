@@ -186,3 +186,24 @@ console.log(5 === '5'); // This will print false since the LHS is a number and t
 ```
 
 Comparison operators are extremely useful while working with control flows like loops and conditional statments.
+
+### Logical operators
+
+Sometimes you want to evaluate conditions. For example, "The Indian cricket team can make it to the next round if they win this match **and** South Africa loses their match" means that India would progress to the next round only if *both* conditions were satisfied. Similarly, "I'd be happy if you go to a Chinese place **or** an Italian place for lunch" means that you'd be happy if *either* condition was satisfied, and would be unhappy only if *neither* was satisfied.
+
+Javascript supports the following logical operators:
+
+- `&&` - The logical `and` operator, which evaluates to `true` only if both LHS and RHS are true. Otherwise it evaluates to `false`
+- `||` - The logical `or` operator, which evaluates to `true` if either LHS or RHS is true, or both are true. If both are false it evaluates to `false`
+
+```javascript
+console.log(true && true); // This will print true to the console
+console.log(false && true); // This will print false to the console
+console.log(true && false); // This will print false to the console
+console.log(false && false); // This will print false to the console
+
+console.log(true || true); // This will print true to the console
+console.log(false || true); // This will print true to the console
+console.log(true || false); // This will print true to the console
+console.log(false || false); // This will print false to the console
+```
