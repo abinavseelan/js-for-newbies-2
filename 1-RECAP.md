@@ -189,7 +189,11 @@ Comparison operators are extremely useful while working with control flows like 
 
 ### Logical operators
 
-Sometimes you want to evaluate conditions. For example, "The Indian cricket team can make it to the next round if they win this match **and** South Africa loses their match" means that India would progress to the next round only if *both* conditions were satisfied. Similarly, "I'd be happy if you go to a Chinese place **or** an Italian place for lunch" means that you'd be happy if *either* condition was satisfied, and would be unhappy only if *neither* was satisfied.
+Sometimes you want to evaluate conditions.
+
+For example, "The Indian cricket team can make it to the next round if they win this match **and** South Africa loses their match" means that India would progress to the next round only if *both* conditions were satisfied.
+
+Similarly, "For lunch I'll have either Chinese or Italian" means that you'd be happy if *either* condition was satisfied, and would be unhappy only if *neither* was satisfied.
 
 Javascript supports the following logical operators:
 
@@ -207,3 +211,4 @@ console.log(false || true); // This will print true to the console
 console.log(true || false); // This will print true to the console
 console.log(false || false); // This will print false to the console
 ```
+
