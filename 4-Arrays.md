@@ -58,6 +58,8 @@ Similar to how variables are dynamically typed in Javascript, arrays in Javascri
 let list = ['Hey!', 2, true, undefined]; // A perfectly valid array.
 ```
 
+### Array length
+
 Any variable that is holding an array has a `.length` property associated with it. This will tell you how *long* the array is.
 
 ```javascript
@@ -65,6 +67,8 @@ let fruits = ['apple', 'orange', 'banana', 'grapes', 'mango'];
 
 console.log(fruits.length); // This will print 5 to the console.
 ```
+
+### Adding values to an Array
 
 Values can be directly assigned to an index. If you add a value after the last index of the array, the array length is automatically increased.
 
@@ -80,6 +84,8 @@ console.log(fruits); // ['apple', 'orange', 'banana', 'grapes', 'mango', 'tomato
 
 console.log(fruits.length); // This will print 6 to the console
 ```
+
+### Modifying values in an array
 
 Existing values in the array can also be directly accessed and modified,
 
