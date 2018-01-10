@@ -75,7 +75,7 @@ let third = `Charizard`;
 // All valid values of type string
 ```
 
-Pro Tip 💡: While there is no difference between single and double quotes, backticks help you create something called string literals.
+**Pro Tip** 💡: While there is no difference between single and double quotes, backticks help you create something called string literals.
 
 Lets say we need to print the first name (stored in a variable called `firstName`) and the last name (stored in a variable called `lastName`) as a single name. To catenate two strings, we can use the `+` operator.
 
@@ -111,7 +111,7 @@ console.log(a); // a is not longer undefined
 
 ### Objects
 
-Objects, objects, objects (?).... we'll cover this in the next section shall we? There's a lot to talk about here. 🤓
+Objects, objects ... objects? We'll cover this in the next section shall we? There's a lot to talk about here. 🤓
 
 ## The typeof operator
 
