@@ -176,6 +176,6 @@ for(let i = 0; i < arr.length; i++) {
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
-1) Create an array of names. Iterate over the array of names and print "Hi, My name is <name>" for each name in the array.
+1) Create an array of names. Iterate over the array of names and print "Hi, My name is \<name\>" for each name in the array.
 
 2) Create an array and print each value in the array. But here's the twist. The values need to be printed backward. For example, if my array is [1, 2, 3, 4, 5], the console should be `5 4 3 2 1`. 🚀
