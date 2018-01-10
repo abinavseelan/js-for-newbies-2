@@ -79,5 +79,85 @@ console.log(c && true);
 console.log(d && true);
 ```
 
+4) 🚀
+
+```javascript
+console.log(10 + "1" - 1 * 7);
+```
+
 ## Explicit Type Conversion (Type Casting)
 
+Javascript gives us control over type conversion as well. We can use `String(<variable>)` to convert a given variable to type *string*. `Number(<variable>)` can be used to the convert the variable to type *number*. `Boolean(<variable>)` can be used to convert a variable to a *boolean* value.
+
+```javascript
+let a = 10;
+
+console.log(String(a)); // This will print "10" to the console
+console.log(typeof String(a)); // This will print "string" to the console
+```
+
+```javascript
+let a = "10"
+
+console.log(Number(a)); // This will print 10 to the console
+console.log(typeof Number(a)); // This will print "number" to the console
+```
+
+```javascript
+let a = ""
+let b = 0;
+let c = 10;
+
+console.log(Boolean(a)); // This will print false to the console
+console.log(typeof Boolean(a)); // This will print "boolean" to the console
+
+console.log(Boolean(b)); // This will print false to the console
+console.log(Boolean(c)); // This will print true to the console
+```
+
+### 🧠 Test your skills!
+
+*Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
+
+What do you think will be the output of the following?
+
+1)
+
+```javascript
+let a = -1;
+
+console.log(String(a));
+console.log(Number(a));
+console.log(Boolean(a));
+
+console.log(Boolean(a + 1));
+```
+
+2)
+
+```javascript
+
+```
+
+
+## NaN
+
+While converting other value types (both implictly and explicitly) to type *number*, there is chance that you might be performing an operation that does not make sense.
+
+For example,
+
+```javascript
+let a = 'Hello World';
+
+console.log(Number(a));
+```
+
+How do you convert the string *Hello World* to an integer or a floating point number? 🤔
+
+The result of the above snippet is `NaN`, or `**N**ot **a** **N**umber`.
+
+The above snippet is a type cast. The same thing would happen with coercion as well
+
+```javascript
+console.log('Hello World' * 3);
+```
