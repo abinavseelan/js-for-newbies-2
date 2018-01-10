@@ -43,11 +43,11 @@ let a = 10;
 console.log(typeof a); // this will print number to the console
 ```
 
-### Test your skills 🧠
-
-What do you think will be the output of the following?
+### 🧠 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
+
+What do you think will be the output of the following?
 
 1) 
 
