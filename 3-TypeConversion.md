@@ -6,7 +6,7 @@ A variable's data type can be changed in Javascript in two ways:
 - explicit type conversion, also known as type casting
 
 
-## Implicit type conversion (Coercion)
+## Implicit Type Conversion (Coercion)
 
 Coercion is the programming paradigm of type conversion that happens implicitly, ie, automatically by the javascript runtime. Given that Javascript is a dynamically typed language, there may come times when variables of different types are put together in the same operation
 
@@ -65,10 +65,19 @@ console.log(a > 10);
 console.log(a < "10");
 ```
 
-3)
+3) 🚀
 
 ```javascript
 let a = "20";
+let b = '';
+let c = 0;
+let d = -1;
 
 console.log(a && true);
+console.log(b && true);
+console.log(c && true);
+console.log(d && true);
 ```
+
+## Explicit Type Conversion (Type Casting)
+
