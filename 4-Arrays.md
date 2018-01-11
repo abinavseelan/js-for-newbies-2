@@ -230,3 +230,72 @@ The Loop has ended
 ```
 
 The moment `break` is called, the loop stops execution and continues execution after the loop.
+
+## Array Methods
+
+Arrays have access to some helpful methods. A few easy to understand, but helpful ones, are:
+
+- `push`
+- `pop`
+- `shift`
+- `unshift`
+
+### `push` and `pop`
+
+The `push()` method lets you insert a value to the end of the array. You need not worry about indices.
+
+```javascript
+let a = [1, 2, 3, 4, 5];
+
+console.log(a); // This will print [1, 2, 3, 4, 5]
+
+a.push(6);
+
+console.log(a); // This will print [1, 2, 3, 4, 5, 6]
+
+a.push('hello');
+
+console.log(a); // This will print [1, 2, 3, 4, 5, 6, 'hello']
+```
+
+The `pop` method lets your remove a value from the end of the array.
+
+```javascript
+let a = [1, 2, 3, 4, 5];
+
+a.pop();
+
+console.log(a); // This will print [1, 2, 3, 4]
+
+a.pop();
+
+console.log(a); // This will print [1, 2, 3]
+```
+
+### `shift` and `unshift`
+
+`unshift` and `shift` to the same thing as `push` and `pop` respectively, except with the front of the array,
+
+`unshift` will insert a value to start of the array.
+
+```javascript
+let a = [1, 2, 3, 4, 5];
+
+a.unshift(6);
+
+console.log(a); // This will print [6, 1, 2, 3, 4, 5]
+```
+
+`shift` will remove a value from the start of the array
+
+```javascript
+let a = [1, 2, 3, 4, 5];
+
+a.shift();
+
+console.log(a); // This will print [2, 3, 4, 5]
+
+a.shift();
+
+console.log(a); // This will print [3, 4, 5]
+```

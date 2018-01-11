@@ -287,8 +287,32 @@ let someFunction = function() {
 };
 ```
 
+### Array.forEach()
+
+To highlight a good usecase for functions as parameters, we can take up the `forEach` method that arrays have. The `forEach` method helps us iterate through an array without having to define a loop!
+
+The `forEach` method takes a function as a parameter. The function is executed for each value in the array. The function takes two parameters, the value at a given index and the index itself. Lets see this in action shall we? 🤖
+
+```javascript
+let letters = ['a', 'b', 'c', 'd', 'e'];
+
+letters.forEach(function(value, index) {
+    console.log(`${value} ${index}`);
+});
+```
+
+This will print out the following to the console
+
+```bash
+a 0
+b 1
+c 2
+d 3
+e 4
+```
+
 ### 🧠 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
-1) Create a function that takes in a function as a parameter and executes that function inside its function block. 🚀 (This is the core concept behind a Javascript pattern called callbacks!)
+1) Create a function `parentFunction` that takes in a function as a parameter and executes that function inside its function block. Execute `parentFunction` multiple times, but each time a different function should be passed into it. 🚀 (This is the core concept behind a Javascript pattern called callbacks!)
