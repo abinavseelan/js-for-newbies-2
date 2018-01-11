@@ -168,7 +168,7 @@ function someFunction() {
 console.log(a); // This will tell you that `a` is not defined.
 ```
 
-**Pro Tip** 💡: Function parameters are local variables too
+**Pro Tip** 💡: Function parameters are local variables too!
 
 Variables declared outside the function block are actually accessible by code *inside* the function block. These variable, from the functions perspective are called *outer variables*.
 
@@ -194,3 +194,56 @@ console.log(a); // This will print 10
 ```
 
 ## Returning a value
+
+In addition to just executing code, functions can also *return* a value to the function caller. Taking the previous example, instead of just printing out the addition `console.log(someNumber + numberToAdd);`, say we want the function to perform the operation and give us the result. Here we would need to *return* the value of `someNumber + numberToAdd`. We can do this by using the `return` keyword.
+
+```javascript
+function addNumber(someNumber, numberToAdd) {
+     return someNumber + numberToAdd;
+}
+let answer;
+
+let a = 10;
+answer = addNumber(a, 2);
+console.log(answer); // This will print 12 to the console
+
+let b = 20;
+answer = addNumber(b, 5);
+console.log(answer); // This will print 25 to the console
+
+let c = 30;
+answer = addNumber(c, 3);
+console.log(answer); // This will print 33 to the console
+
+let d = 40;
+answer = addNumber(d, 4);
+console.log(answer); // This will print 44 to the console
+
+let e = 50;
+answer = addNumber(e, 10); // This will print 60 to the console
+console.log(answer);
+```
+
+Here when we call `addNumber(x, y)`, we perform `x + y` but then return the value. But where will the returned value go? That's why we needed the `answer` variable. When we execute `answer = addNumber(x, y);` the runtime first executes the function `addNumber` and the value is returned to `answer` to hold.
+
+### 🧠 Test your skills!
+
+*Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
+
+1) What do you think is the output of the following? 🚀
+
+```javascript
+function functionWithTwoReturns() {
+    return true;
+    return false;
+}
+
+let answer = functionWithTwoReturns();
+
+console.log(answer); // ?
+```
+
+2) Create a simple function that takes in a number and finds out if the number is a prime number of not. 🚀 For example, if I pass in the number 7, it should return `true` and if I pass in the number 8 it should return `false`.
+
+## Functions are first class citizens
+
