@@ -247,3 +247,48 @@ console.log(answer); // ?
 
 ## Functions are first class citizens
 
+> Functions are first class citizens of Javascript
+
+You'd find this term being thrown around a lot when going through Javascript material. Functions in Javascript are a little bit different from functions from other programming like C and C++ in the sense that you can use a function the same way you would use any other value in the language.
+
+For example, functions can be stored in arrays
+
+```javascript
+let a = [function() {}, function() {}, function() {}];
+```
+
+and functions can be even be passed in as a parameter to other functions!
+
+```javascript
+function someFunction() {
+    // some code
+}
+
+function someOtherFunction(someFunction) {
+    // do something else
+};
+```
+
+Functions can also be assigned to variables. So instead of 
+
+```javascript
+function someFunction() {
+    // do something
+};
+
+someFunction();
+```
+
+you can do this.
+
+```javascript
+let someFunction = function() {
+    // do something
+};
+```
+
+### 🧠 Test your skills!
+
+*Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
+
+1) Create a function that takes in a function as a parameter and executes that function inside its function block. 🚀 (This is the core concept behind a Javascript pattern called callbacks!)
