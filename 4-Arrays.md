@@ -179,3 +179,50 @@ for(let i = 0; i < arr.length; i++) {
 1) Create an array of names. Iterate over the array of names and print "Hi, My name is \<name\>" for each name in the array.
 
 2) Create an array and print each value in the array. But here's the twist. The values need to be printed backward. For example, if my array is [1, 2, 3, 4, 5], the console should be `5 4 3 2 1`. 🚀
+
+
+Pro Tip 💡: Continue and break
+
+`continue` and `break` are keywords associated with loops. `continue` will immediately set the next iteration into action, while `break` will stop the iteration altogether.
+
+Say we need to iterate through an array of numbers. In each iteration, the number should be printed to the console. However, if the number is divisible by 7, we don't want to print it to the console. Here, we need to use `continue`.
+
+```javascript
+let numbers = [1, 4, 7, 29, 49];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 7 === 0) {
+        continue; // This will stop the current iteration and immediately proceed with the next iteration
+    }
+
+    console.log(numbers[i]);
+}
+```
+
+This will print out `1 4 29` to the console. 
+
+To understand `break`, say we need to iterate through an array of names, and print each name to the console. But on the first occurence of the name 'Hodor', we want to stop the execution of the loop and continue on with the rest of the code.
+
+```javascript
+let names = ['Jon', 'Bran', 'Hodor', 'Cercei', 'Jamie'];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i] === 'Hodor') {
+        break;
+    }
+
+    console.log(names[i]);
+}
+
+console.log('The loop has ended'); // This is after the loop
+```
+
+The output of this snippet would be
+
+```bash
+Jon
+Bran
+The Loop has ended
+```
+
+The moment `break` is called, the loop stops execution and continues execution after the loop.
