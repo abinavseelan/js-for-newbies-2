@@ -6,7 +6,7 @@ Functions help prevent code duplication.
 
 Say we have a set of variables and we want to add the value 2 to all of them and then print the value. We have the following variables
 
-```
+```javascript
 let a = 10;
 let b = 20;
 let c = 30;
@@ -109,3 +109,47 @@ The output will be
 52
 ```
 
+### Single source of truth
+
+Functions are extremely useful since they create a single source of truth for logic. If your logic isn't working the way you want it, you know that all the logic is concentrated in one function rather than across your program in different places. Also, if the logic needs to be updated, we need to make the update in just *one* place!
+
+Lets see this in action. In the above example, we're adding 2 to all the numbers. But what if we want to dynamically change the value? One way we can programmatically control the number being added to the variable is by passing in another parameter.
+
+Right now we have this
+
+```javascript
+function addAndPrint(someNumber) {
+    console.log(someNumber + 2);
+}
+```
+
+We can take the value to be added as the *second* parameter
+
+```javascript
+function addAndPrint(someNumber, numberToAdd) {
+    console.log(someNumber + numberToAdd);
+}
+```
+
+And that's about it! Now lets wire in the variables. Now we can provide any value to add the variable, by passing in the value as the second parameter.
+
+```javascript
+function addAndPrint(someNumber, numberToAdd) {
+    console.log(someNumber + numberToAdd);
+}
+
+let a = 10;
+addAndPrint(a, 2); // This will print 12
+
+let b = 20;
+addAndPrint(b, 5); // This will print 25
+
+let c = 30;
+addAndPrint(c, 3); // This will print 33
+
+let d = 40;
+addAndPrint(d, 4); // This will print 44
+
+let e = 50;
+addAndPrint(e, 10); // This will print 60
+```
