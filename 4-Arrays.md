@@ -274,7 +274,7 @@ console.log(a); // This will print [1, 2, 3]
 
 ### `shift` and `unshift`
 
-`unshift` and `shift` to the same thing as `push` and `pop` respectively, except with the front of the array,
+`unshift` and `shift` do the same thing as `push` and `pop` respectively, except with the front of the array,
 
 `unshift` will insert a value to start of the array.
 
@@ -299,3 +299,11 @@ a.shift();
 
 console.log(a); // This will print [3, 4, 5]
 ```
+
+### 🧠 Test your skills!
+
+*Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
+
+1) Try to emulate a queue using arrays and array methods. A queue is a data structure that allows inserts from the end but removals happen from the front. This is called a FIFO (**F**irst **I**n **F**irst **O**ut) approach. 🚀
+
+2) Try to emulate a stack using arrays and array methods. A stack is a data structure that allows inserts from the end and removals from the end. This is called a LIFO (**L**ast **I**n **F**irst **O**ut) approach. 🚀
