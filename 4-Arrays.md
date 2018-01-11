@@ -181,9 +181,11 @@ for(let i = 0; i < arr.length; i++) {
 2) Create an array and print each value in the array. But here's the twist. The values need to be printed backward. For example, if my array is [1, 2, 3, 4, 5], the console should be `5 4 3 2 1`. 🚀
 
 
-Pro Tip 💡: Continue and break
+**Pro Tip** 💡: Continue and break
 
 `continue` and `break` are keywords associated with loops. `continue` will immediately set the next iteration into action, while `break` will stop the iteration altogether.
+
+### continue
 
 Say we need to iterate through an array of numbers. In each iteration, the number should be printed to the console. However, if the number is divisible by 7, we don't want to print it to the console. Here, we need to use `continue`.
 
@@ -200,6 +202,8 @@ for (let i = 0; i < numbers.length; i++) {
 ```
 
 This will print out `1 4 29` to the console. 
+
+### break
 
 To understand `break`, say we need to iterate through an array of names, and print each name to the console. But on the first occurence of the name 'Hodor', we want to stop the execution of the loop and continue on with the rest of the code.
 
