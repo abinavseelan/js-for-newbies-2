@@ -109,7 +109,7 @@ The output will be
 52
 ```
 
-### Single source of truth
+## Single source of truth
 
 Functions are extremely useful since they create a single source of truth for logic. If your logic isn't working the way you want it, you know that all the logic is concentrated in one function rather than across your program in different places. Also, if the logic needs to be updated, we need to make the update in just *one* place!
 
@@ -153,3 +153,44 @@ addAndPrint(d, 4); // This will print 44
 let e = 50;
 addAndPrint(e, 10); // This will print 60
 ```
+
+## Variables in Functions
+
+Functions can have their own *local* variables. Variables can be declared inside a function block. The reason thses variables are called *local* variables is because the variables can only be accessed by code *inside* the function block and not outside. This is related to something called Function Scope. This is out of the scope (heh. pun intended 😛) of this session. It should be covered in a future session!
+
+```javascript
+function someFunction() {
+    let a = 10;
+
+    console.log(a); // This will print 10. `a` is accessible here.
+}
+
+console.log(a); // This will tell you that `a` is not defined.
+```
+
+**Pro Tip** 💡: Function parameters are local variables too
+
+Variables declared outside the function block are actually accessible by code *inside* the function block. These variable, from the functions perspective are called *outer variables*.
+
+```javascript
+let a = 10;
+
+function someFunction() {
+    console.log(a); // `a` is accessible inside the function as an outer variable
+}
+```
+
+However, if you declare a variable of the same name inside the function block, the *local* variable takes precedence over the *outer* variable.
+
+```javascript
+let a = 10;
+
+function someFunction() {
+    let a = 20;
+    console.log(a); // This will print 20
+}
+
+console.log(a); // This will print 10
+```
+
+## Returning a value
