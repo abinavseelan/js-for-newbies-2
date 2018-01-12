@@ -18,6 +18,11 @@ This does not scale well. The human here has just 4 properties. What if he/she h
 
 And this...is where objects come in. An object is an encapsulation of data. Since we're defining properties for a human, a *human* can be an object that encapsulated properties (of other primitive data types) inside it, so that the data is semantically aggregated.
 
+## Objects in Javascript
+
+
+### Creating an object
+
 To create an object, we use the `{}` brackets.
 
 ```javascript
@@ -34,6 +39,8 @@ let human = {
     isAnAvenger: true
 };
 ```
+
+### Storing arrays, functions and objects
 
 Properties are stored as *key-value* pairs. In the above snippet, the keys would be *name*, *age*, *foodPreference* and *isAnAvenger*. A *key* can hold any value type, even arrays, functions and objects!
 
@@ -55,6 +62,8 @@ let human = {
 };
 ```
 
+### Accessing values
+
 Objects use the `.` notation to access values stored in *keys*. For example, to access the `foodPreference* of this *human*.
 
 ```javascript
@@ -66,4 +75,103 @@ let human = {
 };
 
 console.log(human.foodPreference); // This will print Shawarma.
+```
+
+A *key* can also be more than one word. But to do that the *key* will have to be quoted.
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+```
+
+If the *key* is multiple words, the `.` notation will not work. Here you have to use `[]` to access the property.
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+console.log(human['food preference']); // This will print Shawarma.
+```
+
+Nested objects are accessed the same way
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    foodPreference: 'Shawarma',
+    isAnAvenger: true,
+    girlfriend: { // Another object
+        name: 'Pepper Potts',
+        age: 30,
+        isAnAvenger: false
+    }
+};
+
+console.log(human.girlfriend.name); // This will print 'Pepper Potts'
+```
+
+### Adding more properties
+
+After an object is created, we can add more properties directly to the object using the `.` notation again.
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+human.facialHair = true;
+
+console.log(human);
+```
+
+This will print
+
+```bash
+{
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+    facialHair: true
+}
+```
+
+### Modifying existing properties
+
+Similar to arrays, objects allow you to directly modify any value in an object property
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+human.age = 35;
+
+console.log(age);
+```
+
+This will print the following to the console.
+
+```bash
+{
+    name: 'Tony Stark',
+    age: 38,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+}
 ```
