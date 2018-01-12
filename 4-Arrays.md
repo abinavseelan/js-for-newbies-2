@@ -128,7 +128,7 @@ console.log(arr[1]); // This will print [4, 5, 6] to the console
 console.log(arr[1][2]); // This will print 6 to the console
 ```
 
-Pro Tip 💡: Sometimes you would want to insert a value to the end of the array but you don't know what the last index is. Here you can use the `array.length` data to figure this out!
+**Pro Tip** 💡: Sometimes you would want to insert a value to the end of the array but you don't know what the last index is. Here you can use the `array.length` data to figure this out!
 
 ```javascript
 let arr = [1, 2, 3, 4, 5];

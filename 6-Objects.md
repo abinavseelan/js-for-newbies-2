@@ -175,3 +175,36 @@ This will print the following to the console.
     isAnAvenger: true
 }
 ```
+
+### Deleting properties
+
+Properties, once added, can be deleted using the `delete` keyword.
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+delete human.isAnAvenger. // Shh...let's keep it a secret!
+
+console.log(human);
+```
+
+This will print the following to the console
+
+```bash
+{
+    name: 'Tony Stark',
+    age: 38,
+    'food preference': 'Shawarma'
+}
+```
+
+**Pro Tip** 💡: Did you know that arrays in Javascript are *actually* objects? 😱
+
+### 🧠 Test your skills!
+
+1) Try to model something you use on a daily basis, like a cellphone or a laptop as a javascript object. Add properties to it, delete properties from it. 
