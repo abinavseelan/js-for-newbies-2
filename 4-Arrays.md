@@ -97,6 +97,8 @@ fruits[1] = 'pineapple';
 console.log(fruits); // This will print 'pineapple' to the console.
 ```
 
+![Reference anyone?](https://media.giphy.com/media/11FQncIaxjSGmA/giphy.gif)
+
 ### Nested arrays
 
 Since arrays in Javascript can hold any value, they can also hold other arrays!
