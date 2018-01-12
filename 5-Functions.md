@@ -264,9 +264,12 @@ function someFunction() {
     // some code
 }
 
-function someOtherFunction(someFunction) {
+function someOtherFunction(f) {
     // do something else
+    f();
 };
+
+someOtherFunction(someFunction);
 ```
 
 Functions can also be assigned to variables. So instead of 
@@ -285,6 +288,8 @@ you can do this.
 let someFunction = function() {
     // do something
 };
+
+someFunction();
 ```
 
 ### Array.forEach()
@@ -316,3 +321,49 @@ e 4
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
 1) Create a function `parentFunction` that takes in a function as a parameter and executes that function inside its function block. Execute `parentFunction` multiple times, but each time a different function should be passed into it. 🚀 (This is the core concept behind a Javascript pattern called callbacks!)
+
+## Arrow functions
+
+Arrow functions are another way to define functions. While they do defer from function defined with the `function` keyword in some ways, specifically with regard to the `this` keyword (But more on that in a later session, for the purpose of this session, we can just assume it to work the same way as functions defined with the `function` keyword, but with a slightly different syntax.
+
+An arrow function would look like thiis
+
+```javascript
+let someFunction = () => {
+
+}
+```
+
+The main differences in the syntax are:
+- the `function` keyword has been dropped.
+- there is a `=>` added to signify that this block is a function block
+
+Arrow functions allow for syntax reduction. If you have a function with only parameter, you can ignore the `()` surrounding the parameter
+
+```javascript
+let someFunction = (firstParam) => {
+
+};
+
+// can be written as 
+
+let someFunction = firstParam => {
+
+};
+```
+
+If you have more than one parameter, the `()` are required.
+
+Also, if your function has just one line in it's function block *and* that one line is a *return* statement, the `{}` are optional as well.
+
+```javascript
+let someFunction = firstParam => {
+    return firstParam + 2;
+}
+
+// can be written as
+
+let someFunction = firstParam => firstParam + 2;
+```
+
+You might be scratching your head asking yourself why is all this necessary. So did I the first time I saw them and used them. But trust me. Over time it'll grow on you. 😄
