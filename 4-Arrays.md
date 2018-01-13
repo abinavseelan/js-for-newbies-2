@@ -137,10 +137,10 @@ console.log(arr.length); // This will print 5
 
 // Since array indices start from 0, (arr.length - 1) is the last used index
 // So ...
-arr[arr.length] = 6; 
+arr[arr.length] = 6;
 ```
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
@@ -174,14 +174,13 @@ for(let i = 0; i < arr.length; i++) {
 }
 ```
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
 1) Create an array of names. Iterate over the array of names and print "Hi, My name is \<name\>" for each name in the array.
 
-2) Create an array and print each value in the array. But here's the twist. The values need to be printed backward. For example, if my array is [1, 2, 3, 4, 5], the console should be `5 4 3 2 1`. 🚀
-
+1) Create an array and print each value in the array. But here's the twist. The values need to be printed backward. For example, if my array is [1, 2, 3, 4, 5], the console should be `5 4 3 2 1`. 🚀
 
 **Pro Tip** 💡: Continue and break
 
@@ -203,7 +202,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 ```
 
-This will print out `1 4 29` to the console. 
+This will print out `1 4 29` to the console.
 
 ### break
 
@@ -244,7 +243,7 @@ Arrays have access to some helpful methods. A few easy to understand, but helpfu
 
 ### `push` and `pop`
 
-The `push()` method lets you insert a value to the end of the array. You need not worry about indices.
+The `push()` method lets you insert a value to the **end** of the array. You need not worry about indices.
 
 ```javascript
 let a = [1, 2, 3, 4, 5];
@@ -260,7 +259,7 @@ a.push('hello');
 console.log(a); // This will print [1, 2, 3, 4, 5, 6, 'hello']
 ```
 
-The `pop` method lets your remove a value from the end of the array.
+The `pop` method lets your remove a value from the **end** of the array.
 
 ```javascript
 let a = [1, 2, 3, 4, 5];
@@ -302,10 +301,11 @@ a.shift();
 console.log(a); // This will print [3, 4, 5]
 ```
 
-### 🧠 Test your skills!
+**Pro Tip** 💡: The `push()` & `unshift()` methods also return the new length of the array.
+
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
 1) Try to emulate a queue using arrays and array methods. A queue is a data structure that allows inserts from the end but removals happen from the front. This is called a FIFO (**F**irst **I**n **F**irst **O**ut) approach. 🚀
-
-2) Try to emulate a stack using arrays and array methods. A stack is a data structure that allows inserts from the end and removals from the end. This is called a LIFO (**L**ast **I**n **F**irst **O**ut) approach. 🚀
+1) Try to emulate a stack using arrays and array methods. A stack is a data structure that allows inserts from the end and removals from the same end. This is called a LIFO (**L**ast **I**n **F**irst **O**ut) approach. 🚀
