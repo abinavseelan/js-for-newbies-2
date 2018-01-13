@@ -2,6 +2,8 @@
 
 Functions help prevent code duplication.
 
+>A function is a JavaScript procedure—a set of statements that performs a task or calculates a value
+
 ## An Example
 
 Say we have a set of variables and we want to add the value 2 to all of them and then print the value. We have the following variables
@@ -13,6 +15,7 @@ let c = 30;
 let d = 40;
 let e = 50;
 ```
+
 To get our expected output, we would need to do the following
 
 ```javascript
@@ -44,15 +47,14 @@ function someFunctionName() {
 
 A function has three main parts,
 
-![Representation of a function](http://javascript.info/article/function-basics/function_basics@2x.png);
-
+![Representation of a function](https://javascript.info/article/function-basics/function_basics@2x.png)
 *Image source: javascript.info*
 
 - function name: The function name help us reference this function across our program
 - function parameters: These let us provide some data to the function (More on this in a bit)
 - function body: This houses the logic that we want to execute everytime we call the function
 
-Now, let's convert the logic we wrote to use a function. First we need to create a function. 
+Now, let's convert the logic we wrote to use a function. First we need to create a function.
 
 **Pro Tip** 💡: Make sure the function name is descriptive and helps explains what the function will do!
 
@@ -76,7 +78,7 @@ function addAndPrint(someNumber) {
 }
 ```
 
-Now let's wire the variables `a`, `b`, `c`, `d` and `e`.
+Now let's try passing the variables `a`, `b`, `c`, `d` and `e`.
 
 ```javascript
 function addAndPrint(someNumber) {
@@ -163,7 +165,7 @@ function addAndPrint(someNumber, numberToAdd = 2) {
 
 
 addAndPrint(10, 5); // This will print 15 since we've provided the second parameter
-addAndPrint(10); 
+addAndPrint(10);
 /*
 This will print 12. We have not provided the second paramter so the default value 2 is picked
 */
@@ -241,7 +243,7 @@ console.log(answer);
 
 Here when we call `addNumber(x, y)`, we perform `x + y` but then return the value. But where will the returned value go? That's why we needed the `answer` variable. When we execute `answer = addNumber(x, y);` the runtime first executes the function `addNumber` and the value is returned to `answer` to hold.
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
@@ -331,7 +333,7 @@ d 3
 e 4
 ```
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 

@@ -245,6 +245,6 @@ This will print the following to the console
 
 **Pro Tip** 💡: Did you know that arrays in Javascript are *actually* objects? 😱
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 1) Try to model something you use on a daily basis, like a cellphone or a laptop as a javascript object. Add properties to it, delete properties from it. 

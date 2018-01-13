@@ -1,8 +1,8 @@
 # A quick recap of Session 1
 
-Session 1 of *JS for Newbies* was taken by [Ashish Singh](https://github.com/ashish1729) on 7th January, 2018. The entire webinar has been recorded and can be [found here](https://www.youtube.com/watch?v=aljqhsGXgkk)! The talk has a companion repository as well, which can be found [here](https://github.com/ashish1729/jsForNewbies-talk-1). I strongly urge you to go through the content there as well if you haven't already. 😄
+Session 1 of *JS for Newbies* was taken by [Ashish Singh](https://github.com/ashish1729) on 7th January, 2018. The entire webinar has been recorded and can be [found here](https://www.youtube.com/watch?v=aljqhsGXgkk). The talk has a companion repository as well, which can be found [here](https://github.com/ashish1729/jsForNewbies-talk-1). I strongly urge you to go through the content there as well if you haven't already. 😄
 
-I'll be doing a quick recap of the topics since some of the topics covered in that Session are extremely important to the second Session.
+I'll be doing a quick recap of the topics covered in the previous session that are  important to this session.
 
 ## What is Javascript?
 
@@ -14,7 +14,7 @@ Javascript can be natively run inside your browser like Chrome, Firefox or Safar
 
 ### Developer console in Chrome
 
-![screen shot 2018-01-09 at 12 53 59 am](https://user-images.githubusercontent.com/6417910/34688300-a720488a-f4d7-11e7-8ffe-3c736d854ae0.png)
+![getting to the developer console in chrome](https://user-images.githubusercontent.com/6417910/34688300-a720488a-f4d7-11e7-8ffe-3c736d854ae0.png)
 
 ## Comments
 
@@ -51,13 +51,13 @@ console.log(1);
 console.log(3);
 ```
 
-Here, `console.log(2)` will not execute since it has been commented and comments are ignore during execution!
+Here, `console.log(2)` will not execute since it has been commented out and comments are ignored during execution!
 
 ## Variables
 
-Remember algebra from school? 
+Remember algebra from school?
 
-```
+```js
 x = 5
 
 x + 10
@@ -65,7 +65,7 @@ x + 10
 
 Here we know that the value of `x + 10` is going to be 15 since the *variable* `x` holds the value 5.
 
-Well...if you remember your 5th standard algebra well, then you've pretty much understood variables already! Similar to the way `x` holds 5 in the equation above, variables in programming languages can store some data that we can reference by just the variable name.
+Well... if you remember your 5th standard algebra well, then you've pretty much understood variables already! Similar to the way `x` holds 5 in the equation above, variables in programming languages can store some data that we can reference by just the variable name.
 
 Varibles in JS can be created using the `let` keyword.
 
@@ -89,20 +89,23 @@ console.log(a); // This will print the value 20 to the console
 
 ## Constants
 
-Constants function like variables. The only caveat is that once a value has been assigned to a constant, the value cannot be changed. Constants in JS can be created using the `const` keyword.
+Constants function like variables. The only caveat is that once a value has been assigned to a constant, their **value** cannot be changed. Constants in JS can be created using the `const` keyword.
 
 ```javascript
 const number = 10;
 
-
 number = 20; // This line will throw an error!
 ```
 
-<img width="434" alt="screen shot 2018-01-09 at 11 16 09 am" src="https://user-images.githubusercontent.com/6417910/34706559-9158c5fc-f52e-11e7-9a0e-ef162c485505.png">
+<center>
+<img
+    style="width:80%; margin: 0 auto;"
+    alt="javascript constants cannot be re-assigned" src="https://user-images.githubusercontent.com/6417910/34706559-9158c5fc-f52e-11e7-9a0e-ef162c485505.png" />
+</center>
 
 ## Operators
 
-Programming revolves around solving problems and problems, in most cases, involve taking data and computing results with them. JS, like most other programming languages, lets you compute results using operators.
+Programming revolves around *solving problems*. Problems, in most cases, involve taking data and computing results with them. JS, like most other programming languages, lets you compute results using operators.
 
 Operators are of different kinds:
 
@@ -112,13 +115,16 @@ Operators are of different kinds:
 
 ### Numeric Operators
 
-Numeric operators function like their mathematical counterparts. JS supports the following numeric operators
+Numeric operators function like their mathematical counterparts.  
+JS supports the following numeric operators:
 
-- `+` - Addition
-- `-` - Subtraction
-- `*` - Multiplication
-- `/` - Division
-- `%` - Modulus
+|Operation|Operator      |Example  |
+|:-------:|--------------|---------|
+|`+`      |Addition      |`x + 10` |
+|`-`      |Subtraction   |`20 - 15`|
+|`*`      |Multiplication|`100 * y`|
+|`/`      |Division      |`25 / x` |
+|`%`      |Modulus       |`30 % 5` |
 
 ```javascript
 let a = 10;
@@ -143,18 +149,20 @@ console.log(a % c); // This will print 1 to the console since 10/3 has a 1 remai
 
 ### Comparison Operators
 
-Sometimes you would want to compare data, and this is where comparison operators come in
+Sometimes you would want to compare data, and this is where comparison operators come in.
 
 The following are the supported comparison operators:
 
-- `>` - Greater than
-- `<` - Less than
-- `>=` - Greater than or equal to
-- `<=` - Less than or equal to
-- `==` - Equal to
-- `!=` - Not equal to
-- `===` - Strictly equal to
-- `!==` - Strictly not equal to
+|Operation|Operator      |
+|:-------:|--------------|
+|`>`      |Greater than|
+|`<`      |Less than|
+|`>=`     |Greater than or equal to|
+|`<=`     |Less than or equal to|
+|`==`     |Equal to|
+|`!=`     |Not equal to|
+|`===`    |*Strictly* equal to|
+|`!==`    |*Strictly* not equal to|
 
 ```javascript
 console.log(10 > 5); // This will print true
@@ -178,7 +186,7 @@ console.log(10 != 10); // This will print false
 console.log(5 != 10); // This will print true
 ```
 
-What is the difference between equal-to and strictly-equal-to? 🤔
+What is the difference between equal-to and strictly-equal-to, you ask? 🤔
 
 The `==` operator checks only the value being equated, while `===` checks both the value and the data types on either side of the operator (more on data types in Session 2).
 
@@ -324,7 +332,6 @@ while(number !== 5) {
 ```
 
 Here, we first send in `number = 1`, which is not equal to 5, so the block executes. We then increment number by 1 and retry the condition. *2* is still not equal to *5* so the block is executed again. This goes on until number is now 5. *5* is equal to *5*. Now the block stops repeating the execution continues after this block.
-
 
 ### for()
 

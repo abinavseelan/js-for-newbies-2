@@ -5,7 +5,6 @@ A variable's data type can be changed in Javascript in two ways:
 - implicit type conversion, also known as coercion
 - explicit type conversion, also known as type casting
 
-
 ## Implicit Type Conversion (Coercion)
 
 Coercion is the programming paradigm of type conversion that happens implicitly, ie, automatically by the javascript runtime. Given that Javascript is a dynamically typed language, there may come times when variables of different types are put together in the same operation
@@ -27,7 +26,7 @@ Similarly,
 
 ```javascript
 let a = 20;
-let b = "10";
+let b = '10';
 
 console.log(a + b); // This will print 2010
 console.log(a - b); // This will print 10
@@ -35,7 +34,7 @@ console.log(a - b); // This will print 10
 
 In `(a + b)`, the variable `a` is coerced to a value of type *string* and then `a` and `b` are catenated, resulting in `2010`. In `(a - b)`, the variable `b` is coerced to type *number* and then the equation is evalatued.
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
@@ -44,8 +43,8 @@ What do you think will be the output of the following?
 1)
 
 ```javascript
-let a = "20";
-let b = "10";
+let a = '20';
+let b = '10';
 
 console.log(a + b);
 console.log(a - b);
@@ -56,19 +55,19 @@ console.log(a / b);
 2)
 
 ```javascript
-let a = "20";
-let b = "40";
+let a = '20';
+let b = '40';
 
 console.log(a > b);
 console.log(a < b);
 console.log(a > 10);
-console.log(a < "10");
+console.log(a < '10');
 ```
 
 3) 🚀
 
 ```javascript
-let a = "20";
+let a = '20';
 let b = '';
 let c = 0;
 let d = -1;
@@ -82,7 +81,7 @@ console.log(d && true);
 4) 🚀
 
 ```javascript
-console.log(10 + "1" - 1 * 7);
+console.log(10 + '1' - 1 * 7);
 ```
 
 ## Explicit Type Conversion (Type Casting)
@@ -97,14 +96,14 @@ console.log(typeof String(a)); // This will print "string" to the console
 ```
 
 ```javascript
-let a = "10"
+let a = '10';
 
 console.log(Number(a)); // This will print 10 to the console
 console.log(typeof Number(a)); // This will print "number" to the console
 ```
 
 ```javascript
-let a = ""
+let a = '';
 let b = 0;
 let c = 10;
 
@@ -115,7 +114,7 @@ console.log(Boolean(b)); // This will print false to the console
 console.log(Boolean(c)); // This will print true to the console
 ```
 
-### 🧠 Test your skills!
+### 🕵 Test your skills!
 
 *Think of the answer before executing it yourself, execute it and see if you got it right! Questions marked with a* 🚀 *are slightly tricky.*
 
@@ -133,13 +132,6 @@ console.log(Boolean(a));
 console.log(Boolean(a + 1));
 ```
 
-2)
-
-```javascript
-
-```
-
-
 ## NaN
 
 While converting other value types (both implictly and explicitly) to type *number*, there is chance that you might be performing an operation that does not make sense.
@@ -154,7 +146,7 @@ console.log(Number(a));
 
 How do you convert the string *Hello World* to an integer or a floating point number? 🤔
 
-The result of the above snippet is `NaN`, or `**N**ot **a** **N**umber`.
+The result of the above snippet is `NaN`, or "**N**ot **a** **N**umber".
 
 The above snippet is a type cast. The same thing would happen with coercion as well
 
