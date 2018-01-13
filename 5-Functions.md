@@ -154,6 +154,21 @@ let e = 50;
 addAndPrint(e, 10); // This will print 60
 ```
 
+**Pro Tip** 💡: Javascript allow you provide default values to a parameter as well. When calling the function, if the parameter is not provided in the function call, the default value for the parameter is used instead
+
+```javascript
+function addAndPrint(someNumber, numberToAdd = 2) {
+    console.log(someNumber + numberToAdd);
+}
+
+
+addAndPrint(10, 5); // This will print 15 since we've provided the second parameter
+addAndPrint(10); 
+/*
+This will print 12. We have not provided the second paramter so the default value 2 is picked
+*/
+```
+
 ## Variables in Functions
 
 Functions can have their own *local* variables. Variables can be declared inside a function block. The reason thses variables are called *local* variables is because the variables can only be accessed by code *inside* the function block and not outside. This is related to something called Function Scope. This is out of the scope (heh. pun intended 😛) of this session. It should be covered in a future session!
