@@ -119,6 +119,46 @@ let human = {
 console.log(human.girlfriend.name); // This will print 'Pepper Potts'
 ```
 
+**Pro Tip** 💡: You can also directly copy object properties to other variables. You can do this in two ways.
+
+The first is by using the `.` notation.
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+let name = human.name;
+```
+
+However, the preferred way to copy over the properties to varibles is through a javascript construct called object *destructuring*. For example, if we want access to the *name* and *age* properties, we can just do this
+
+```javascript
+let human = {
+    name: 'Tony Stark',
+    age: 40,
+    'food preference': 'Shawarma',
+    isAnAvenger: true
+};
+
+let { name, age } = human;
+
+console.log(name); // This will  print 'Tony Stark'
+console.log(age); // This will print 40
+```
+
+Here the variables share the same name as the keys. We can also rename the variables as well
+
+```javascript
+let { name: N, age: A} = human;
+
+console.log(N); // This will print 'Tony Stark'
+console.log(A); // This will print 40
+```
+
 ### Adding more properties
 
 After an object is created, we can add more properties directly to the object using the `.` notation again.
