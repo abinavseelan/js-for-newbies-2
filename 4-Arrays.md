@@ -110,7 +110,7 @@ arr[1] = [1, 2, 3];
 arr[2] = [4, 5, 6];
 arr[3] = [7, 8, 9];
 
-console.log(arr); // This will print [[1, 2, 3], [4, 5, 6], [7, 8, 9]] to the console
+console.log(arr); // This will print [ <1 empty item>, [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] to the console
 ```
 
 These are called nested arrays. To access values *inside* nested arrays, you need to first get the index of the nested array, and then the index of the value inside the nested array.
