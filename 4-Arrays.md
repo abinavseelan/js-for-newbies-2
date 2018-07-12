@@ -34,7 +34,7 @@ Ah! That's much cleaner. All the values we want to store and semantically stored
 
 > An Array is an ordered list of values.
 
-Array elements are numbered starting from 0. This is called an Array index. We can access any value in the array using the index - `array[<index>]`. To get the value 'orange' for example,
+Array elements are numbered starting from **0**. This is called an Array index. We can access any value in the array using the index - `array[<index>]`. To get the value 'orange' for example,
 
 ```javascript
 let fruits = ['apple', 'orange', 'banana', 'grapes', 'mango'];
@@ -94,7 +94,7 @@ let fruits = ['apple', 'orange', 'banana', 'grapes', 'mango'];
 
 fruits[1] = 'pineapple';
 
-console.log(fruits); // This will print 'pineapple' to the console.
+console.log(fruits); // This will print ['apple', 'orange', 'banana', 'grapes', 'mango'] to the console.
 ```
 
 ![Reference anyone?](https://media.giphy.com/media/11FQncIaxjSGmA/giphy.gif)
@@ -106,22 +106,22 @@ Since arrays in Javascript can hold any value, they can also hold other arrays!
 ```javascript
 let arr = [];
 
-arr[1] = [1, 2, 3];
-arr[2] = [4, 5, 6];
-arr[3] = [7, 8, 9];
+arr[0] = [1, 2, 3];
+arr[1] = [4, 5, 6];
+arr[2] = [7, 8, 9];
 
-console.log(arr); // This will print [[1, 2, 3], [4, 5, 6], [7, 8, 9]] to the console
+console.log(arr); // This will print [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] to the console
 ```
 
 These are called nested arrays. To access values *inside* nested arrays, you need to first get the index of the nested array, and then the index of the value inside the nested array.
-If we want to get the value *6* from the above nested arrays,
+If we want to get the value *6* from the above nested array:
 
 ```javascript
 let arr = [];
 
-arr[1] = [1, 2, 3];
-arr[2] = [4, 5, 6];
-arr[3] = [7, 8, 9];
+arr[0] = [1, 2, 3];
+arr[1] = [4, 5, 6];
+arr[2] = [7, 8, 9];
 
 console.log(arr[1]); // This will print [4, 5, 6] to the console
 
